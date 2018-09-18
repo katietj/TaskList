@@ -1,8 +1,12 @@
 <h1> Here is info about this task</h1>
 
+<% if @task.nil? %>
+  <h1> 404 Not found</h1>
+<% else %>
 
-  <h2>
-      <%= @task[:task] %>
-  </h2>
-  <h3>Description: <%= @task[:description]%>
+
+    <h2>  <%= @task[:task] %> </h2>
+
+  <h3>Description: <%= @task[:description]%></h3>
   <p> Complete by <%= @task[:completiondate] %></p>
+<% end %>

@@ -821,3 +821,157 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:48:57 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:51:12 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:51:42 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:52:13 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:52:42 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:53:29 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-17 18:53:53 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-18 06:47:12 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 102ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-18 06:47:55 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2018-09-18 06:55:21 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-18 09:57:58 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 288ms (Views: 273.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2018-09-18 09:58:04 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+          ^~~~~~
+/Users/katietj/ADA/week7/TaskList/app/views/tasks/show.html.erb:16: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^:
+  app/views/tasks/show.html.erb:14:in `'
+
+Started POST "/__better_errors/76fce6fc846ae191/variables" for 127.0.0.1 at 2018-09-18 09:58:04 -0700
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-18 09:58:14 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2018-09-18 09:58:16 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+          ^~~~~~
+/Users/katietj/ADA/week7/TaskList/app/views/tasks/show.html.erb:16: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^:
+  app/views/tasks/show.html.erb:14:in `'
+
+Started POST "/__better_errors/1e385c1cc035ad42/variables" for 127.0.0.1 at 2018-09-18 09:58:16 -0700
+Started GET "/tasks/index" for 127.0.0.1 at 2018-09-18 09:58:18 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/4" for 127.0.0.1 at 2018-09-18 09:59:18 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+          ^~~~~~
+/Users/katietj/ADA/week7/TaskList/app/views/tasks/show.html.erb:16: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^:
+  app/views/tasks/show.html.erb:14:in `'
+
+Started POST "/__better_errors/5c4916d7aba6b416/variables" for 127.0.0.1 at 2018-09-18 09:59:18 -0700
+Started GET "/tasks/4" for 127.0.0.1 at 2018-09-18 10:00:03 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+

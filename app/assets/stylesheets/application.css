@@ -14,26 +14,34 @@
  *= require_self
  */
 .maingrid{
-  display: grid;}
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: "a b c"
+                        "d e f"
+                        "g h i";}
 
 
 nav{
-  background-color: blue;
-
+  background-color: lightgrey;
+  grid-area: d;
 
 }
 
 header{
   background-color: grey;
+  grid-area: a;
 
 
 }
 
 footer{
-  background-color: red;
-  
+  background-color: lightpink;
+  grid-area: h;
+
 }
 
 section{
   background-color: pink;
+  grid-area: e;
 }

@@ -2,7 +2,8 @@
 <ul>
   <% @tasks.each do |task|  %>
     <li>
-      <p>Task: <%= task[:task]%> </p>
+      <a href="/tasks/<%= task[:id] %>"><h2>
+        <%= task[:title] %></h2>
       <p> Description: <%= task[:description] %> </p>
       <p>Must be done by: <%= task[:completiondate] %> </p>
     </li>
