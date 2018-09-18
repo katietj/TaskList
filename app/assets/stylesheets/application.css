@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+.maingrid{
+  display: grid;}
+
+
+nav{
+  background-color: blue;
+
+
+}
+
+header{
+  background-color: grey;
+
+
+}
+
+footer{
+  background-color: red;
+  
+}
+
+section{
+  background-color: pink;
+}
