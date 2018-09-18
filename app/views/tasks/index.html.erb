@@ -1,11 +1,12 @@
 <h1>Your Tasks</h1>
-<ul>
+
   <% @tasks.each do |task|  %>
-    <li>
-      <a href="/tasks/<%= task[:id] %>"><h2>
-        <%= task[:name] %></h2>
-      <p> Description: <%= task[:description] %> </p>
-      <p>Must be done by: <%= task[:completiondate] %> </p>
-    </li>
+      <a href="/tasks/<%= task.id%>"><h2>
+       <%= task.name %>
+     </h2>
+   </a>
+      <p>Mark Complete | Edit | Delete </p>
   <% end %>
-</ul>
+
+
+  
