@@ -35,11 +35,7 @@ header{
 
 }
 
-footer{
-  background-color: lightpink;
-  grid-area: h;
 
-}
 
 section{
   background-color: pink;
