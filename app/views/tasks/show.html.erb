@@ -9,4 +9,5 @@
 
   <h3>Description: <%= @task.description%></h3>
   <p> Complete by <%= @task.completiondate %></p>
+  <%= link_to "Delete #{@task.name}", destroy_task_path(@task.id), method: :delete, data: {confirm: 'Are you sure?'} %>
 <% end %>
