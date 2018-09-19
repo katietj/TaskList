@@ -16,8 +16,19 @@ class TasksController < ApplicationController
     end
 
     def new
+      @task = Task.new
     end
 
     def create
+      @task = Task.new(name: params[:task][:name], description: params[:task][:description], completiondate: params[:task][:completiondate])
+      if @task.save
+        redirect_to root_path
+      else
+        render :new
+      end
     end
-end
+
+    def edit
+      @task = Task.find(params[:id].to_i)
+    end
+  end
