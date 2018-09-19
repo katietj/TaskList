@@ -15,5 +15,9 @@ class TasksController < ApplicationController
    @task = Task.find_by(id: id)
     end
 
+    def new
+    end
 
+    def create
+    end
 end
