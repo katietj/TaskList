@@ -68,7 +68,9 @@ footer{
   grid-area: g;
 }
 
-
+.strike{
+  text-decoration: line-through;
+}
 
 section{
   background-color: pink;

@@ -5,4 +5,11 @@
    </a>
    <%= link_to "Edit", edit_task_path(task.id) %>
    <%= link_to "Delete", destroy_task_path(task.id) %>
+
+
+   <% if task.completiondate.length > 1 %>
+    <%= link_to "Completed", complete_task_path(task.id), class: "strike"%>
+    <%elsif  task.completiondate.length < 1%>
+    <%= link_to "Complete", complete_task_path(task.id)%>
+    <% end %>
   <% end %>
