@@ -1,15 +1,16 @@
 
-
+<main>
 <%= form_with model: @task do |f|%>
   <p> Please provide the following information to save a new task:</p>
-  <%= f.label :name %>
- <%= f.text_field :name %>
+<p>  <%= f.label :name %>
+ <%= f.text_field :name %></p>
 
  <%= f.label :description %>
  <%= f.text_field :description %>
 
- 
+
  <%= f.hidden_field :completiondate %>
 
- <%= f.submit "Save Task", class: "task-button" %>
+ <%= f.submit "Save Task" %>
 <%end%>
+</main>

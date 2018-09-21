@@ -20,7 +20,7 @@ class TasksController < ApplicationController
     end
 
     def create
-      @task = Task.new(name: params[:task][:name], description: params[:task][:description], completiondate: params[:task][:completiondate], completed?: params[:task][:completed?])
+      @task = Task.new(name: params[:task][:name], description: params[:task][:description], completiondate: params[:task][:completiondate])
       if @task.save
         redirect_to root_path
       else

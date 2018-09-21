@@ -1,13 +1,13 @@
-<h1>Your Tasks</h1>
+<h2>Your Tasks:</h2>
 
   <% @tasks.each do |task|  %>
-  <h2><%= link_to task.name, task_path(task.id) %> </h2>
+  <h3><%= link_to task.name, task_path(task.id), class: "task_name" %> </h3>
    </a>
-   <%= link_to "Edit", edit_task_path(task.id) %>
-   <%= link_to "Delete", destroy_task_path(task.id) %>
+   <%= link_to "Edit |", edit_task_path(task.id),class: "link_to" %>
+   <%= link_to "Delete |", destroy_task_path(task.id),class: "link_to",method: :delete, data: {confirm: 'Are you sure?'} %>
    <% if !task.completiondate %>
-  <%= link_to 'Complete Task', complete_task_path(task.id), method: :patch %>
+  <%= link_to 'Complete Task', complete_task_path(task.id),class: "link_to", method: :patch %>
     <% else %>
-   <%= link_to 'Undo  Complete', undo_complete_path(task.id), method: :patch %> 
+   <%= link_to 'Undo  Complete', undo_complete_path(task.id),class: "link_to", method: :patch %>
     <% end %>
   <% end %>
