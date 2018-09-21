@@ -5,11 +5,9 @@
    </a>
    <%= link_to "Edit", edit_task_path(task.id) %>
    <%= link_to "Delete", destroy_task_path(task.id) %>
-
-
-   <% if task.completiondate.length > 1 %>
-    <%= link_to "Completed", complete_task_path(task.id), class: "strike"%>
-    <%elsif  task.completiondate.length < 1%>
-    <%= link_to "Complete", complete_task_path(task.id)%>
+   <% if !task.completiondate %>
+  <%= link_to 'Complete Task', complete_task_path(task.id), method: :patch %>
+    <% else %>
+   <%= link_to 'Undo  Complete', undo_complete_path(task.id), method: :patch %> 
     <% end %>
   <% end %>

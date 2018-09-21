@@ -59,7 +59,7 @@ class TasksController < ApplicationController
 
     def undo_complete
       task = Task.find(params[:id])
-      task.completiondate = " "
+      task.completiondate = nil
       task.save
       redirect_to root_path
     end

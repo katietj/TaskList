@@ -10,6 +10,5 @@
   <h3>Description: <%= @task.description%></h3>
 
   <%= link_to "Delete #{@task.name}", destroy_task_path(@task.id), method: :delete, data: {confirm: 'Are you sure?'} %>
-  <%= link_to "Mark complete #{@task.name}", complete_task_path(@task.id), method: :patch %>
-
+  <%= link_to "Edit #{@task.name}", edit_task_path(@task.id) %>
 <% end %>
