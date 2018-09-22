@@ -1,8 +1,13 @@
 <h2>Your Tasks:</h2>
 
   <% @tasks.each do |task|  %>
+  <%if !task.completiondate %>
   <h3><%= link_to task.name, task_path(task.id), class: "task_name" %> </h3>
    </a>
+   <% else %>
+   <h3><%= link_to task.name, task_path(task.id), class: "task_name_strike" %> </h3>
+    </a>
+     <% end %>
    <%= link_to "Edit |", edit_task_path(task.id),class: "link_to" %>
    <%= link_to "Delete |", destroy_task_path(task.id),class: "link_to",method: :delete, data: {confirm: 'Are you sure?'} %>
    <% if !task.completiondate %>

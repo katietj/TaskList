@@ -79,10 +79,19 @@ h2{
 }
 
 .task_name{
+  color: blue;
   text-decoration: none;
   font-size: 2em;
   font-family: 'Inconsolata', monospace;
 }
+.task_name_strike{
+  color: blue;
+  text-decoration: line-through;
+  font-size: 2em;
+  font-family: 'Inconsolata', monospace;
+}
+
+
 
 .showheader{
   font-size: 1.5em;
